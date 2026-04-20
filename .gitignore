@@ -11,10 +11,10 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Model files
-#models/
-#*.h5
-#*.keras
-#*.pkl
+models/
+*.h5
+*.keras
+*.pkl
 
 # Outputs
 outputs/
