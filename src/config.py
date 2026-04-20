@@ -1,0 +1,41 @@
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+DATASET_DIR = BASE_DIR / "dataset"
+OUTPUTS_DIR = BASE_DIR / "outputs"
+DOCS_DIR = BASE_DIR / "docs"
+MODELS_DIR = BASE_DIR / "models"
+
+DATASET_FILE = DATASET_DIR / "Dataset.csv"
+
+CONFUSION_MATRIX_FILE = OUTPUTS_DIR / "confusion_matrix.png"
+METRICS_REPORT_FILE = OUTPUTS_DIR / "metrics_report.txt"
+PREDICTIONS_FILE = OUTPUTS_DIR / "predictions.txt"
+
+MODEL_FILE = MODELS_DIR / "rnn_model.keras"
+TOKENIZER_FILE = MODELS_DIR / "tokenizer.pkl"
+LABEL_ENCODER_FILE = MODELS_DIR / "label_encoder.pkl"
+TEST_DATA_FILE = MODELS_DIR / "test_data.npz"
+
+TEST_SIZE = 0.30
+RANDOM_STATE = 42
+
+MAX_WORDS = 30000
+MAX_SEQUENCE_LENGTH = 80
+
+BATCH_SIZE = 128
+EPOCHS = 15
+RNN_UNITS = 128
+DROPOUT_RATE = 0.5
+LEARNING_RATE = 0.0005
+
+EMBEDDING_DIM = 100
+WORD2VEC_WINDOW = 5
+WORD2VEC_MIN_COUNT = 1
+WORD2VEC_WORKERS = 4
+
+UNCLEAR_THRESHOLD = 0.45
+
+TEXT_COLUMN = "text"
+LABEL_COLUMN = "Emotion"
